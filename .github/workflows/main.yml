@@ -1,0 +1,17 @@
+name: A workflow
+on: push
+jobs:
+  build-job:
+    name: Hello World App
+    runs-on: ubuntu-latest
+  steps:
+     -uses: actions/checkout@v1
+      name: Check out code
+     -name: echo
+      run: echo hello world
+      name: index.html content
+       run: |
+       echo "this is lineone"
+       
+      
+    
